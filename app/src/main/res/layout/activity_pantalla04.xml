@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8EBD0"
+    tools:context=".Pantalla04">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline203"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline204"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PANTALLA 4"
+        android:textSize="32sp"
+        android:textColor="#323232"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline102"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de veces elegida"
+        android:textSize="32sp"
+        android:textColor="#323232"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline102"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="@+id/guideline101" />
+
+
+    <TextView
+        android:id="@+id/textNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELEGIDA"
+        android:textSize="30sp"
+        android:textColor="#323232"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline103"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="@+id/guideline102" />
+
+    <Button
+        android:id="@+id/buttonVolver04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Volver"
+        android:textSize="28sp"
+        android:textColor="#B8EBD0"
+        android:textStyle="bold"
+        android:backgroundTint="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/guideline104"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="@+id/guideline103" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

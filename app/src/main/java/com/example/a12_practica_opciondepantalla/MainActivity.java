@@ -99,6 +99,24 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intento3);
                         //Para finalizar
                         break;
+
+                    case 4:
+
+                        //Se crea un nuevo Intent para pasar a la actividad `pantalla01`. Primera Pantalla
+                        Intent intento4 = new Intent(MainActivity.this, Pantalla04.class);
+                        //Se actualiza el contador para reflejar el número de veces que se va eligiendo
+                        contador04 += 1;
+                        //Se asocia el contador02 a la nueva variable que se envia a pantalla01
+                        int contadorPantalla04 = contador04;
+
+                        //Se agrega al Bundle el valor de contadorPantalla01 con la clave "ELEGIDA"
+                        guardar.putInt("ELEGIDA", contadorPantalla04);
+                        //Se asocia el Bundle al Intent, para enviar los datos
+                        intento4.putExtras(guardar);
+                        //Se inicia la actividad pantalla01
+                        startActivity(intento4);
+                        //Para finalizar
+                        break;
                 }
             }
         });

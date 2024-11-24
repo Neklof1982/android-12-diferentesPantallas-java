@@ -13,6 +13,9 @@
         android:theme="@style/Theme._12_Practica_OpcionDePantalla"
         tools:targetApi="31">
         <activity
+            android:name=".Pantalla04"
+            android:exported="false" />
+        <activity
             android:name=".Pantalla03"
             android:exported="false" />
         <activity
