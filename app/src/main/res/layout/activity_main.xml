@@ -78,12 +78,15 @@
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Si quiero que sea numero cambiar de text a number -->
+    <!-- Justo debajo del espacio -->
     <EditText
         android:id="@+id/editTextNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
+
+        android:inputType="number"
         android:text=""
         android:textSize="30sp"
         android:textColor="#F8F8F9"
