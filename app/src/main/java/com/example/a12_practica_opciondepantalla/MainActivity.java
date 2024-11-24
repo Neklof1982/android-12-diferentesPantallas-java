@@ -14,7 +14,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    int contador = 0;
+    //Declaración de contadores de pantallas elegidas
+    int contador01 = 0;
+    int contador02 = 0;
+    int contador03 = 0;
+    int contador04 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
                 //Se convierte el texto a número, ya que es la pantalla elegida
                 //Integer.parseInt(...) lo convierte a entero
                 //String.value.of(...) lo convierte a String
@@ -41,12 +47,13 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (textoPantalla) {
                     case 1:
+
                         //Se crea un nuevo Intent para pasar a la actividad `pantalla01`. Primera Pantalla
                         Intent intento1 = new Intent(MainActivity.this, Pantalla01.class);
                         //Se actualiza el contador para reflejar el número de veces que se va eligiendo
-                        contador += 1;
-                        //Se asocia el contador a la nueva variable que se envia a pantalla01
-                        int contadorPantalla01 = contador;
+                        contador01 +=1;
+                        //Se asocia el contador01 a la nueva variable que se envia a pantalla01
+                        int contadorPantalla01 = contador01;
 
                         //Se agrega al Bundle el valor de contadorPantalla01 con la clave "ELEGIDA"
                         guardar.putInt("ELEGIDA", contadorPantalla01);
@@ -54,9 +61,23 @@ public class MainActivity extends AppCompatActivity {
                         intento1.putExtras(guardar);
                         //Se inicia la actividad pantalla01
                         startActivity(intento1);
-
+                        break;
                     case 2:
 
+                        //Se crea un nuevo Intent para pasar a la actividad `pantalla01`. Primera Pantalla
+                        Intent intento2 = new Intent(MainActivity.this, Pantalla02.class);
+                        //Se actualiza el contador para reflejar el número de veces que se va eligiendo
+                        contador02 += 1;
+                        //Se asocia el contador02 a la nueva variable que se envia a pantalla01
+                        int contadorPantalla02 = contador02;
+
+                        //Se agrega al Bundle el valor de contadorPantalla01 con la clave "ELEGIDA"
+                        guardar.putInt("ELEGIDA", contadorPantalla02);
+                        //Se asocia el Bundle al Intent, para enviar los datos
+                        intento2.putExtras(guardar);
+                        //Se inicia la actividad pantalla01
+                        startActivity(intento2);
+                        break;
                 }
             }
         });

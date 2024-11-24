@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Pantalla02">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline101"
@@ -67,7 +67,7 @@
         android:id="@+id/textTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escriba la opción de Pantalla:\n1.\n2.\n3.\n4."
+        android:text="PANTALLA 2"
         android:textSize="32sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -77,13 +77,26 @@
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumero"
+    <TextView
+        android:id="@+id/textContador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
+        android:text="Número de veces elegida"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline102"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="@+id/guideline101" />
+
+
+    <TextView
+        android:id="@+id/textNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELEGIDA"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -94,10 +107,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline102" />
 
     <Button
-        android:id="@+id/buttonElegir"
+        android:id="@+id/buttonVolver02"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Ir a pantalla elegida"
+        android:text="Volver"
         android:textSize="28sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -105,9 +118,6 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline204"
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="@+id/guideline103" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
