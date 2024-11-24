@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A4A5AE"
     tools:context=".Pantalla02">
 
     <androidx.constraintlayout.widget.Guideline
@@ -69,7 +70,7 @@
         android:layout_height="wrap_content"
         android:text="PANTALLA 2"
         android:textSize="32sp"
-        android:textColor="@color/black"
+        android:textColor="#323232"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline102"
@@ -83,7 +84,7 @@
         android:layout_height="wrap_content"
         android:text="Número de veces elegida"
         android:textSize="32sp"
-        android:textColor="@color/black"
+        android:textColor="#323232"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline102"
@@ -97,8 +98,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ELEGIDA"
-        android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textColor="#323232"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline103"
@@ -112,12 +113,15 @@
         android:layout_height="0dp"
         android:text="Volver"
         android:textSize="28sp"
-        android:textColor="@color/black"
+        android:textColor="#A4A5AE"
         android:textStyle="bold"
+        android:backgroundTint="#323232"
         app:layout_constraintBottom_toTopOf="@+id/guideline104"
         app:layout_constraintEnd_toStartOf="@+id/guideline204"
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="@+id/guideline103" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

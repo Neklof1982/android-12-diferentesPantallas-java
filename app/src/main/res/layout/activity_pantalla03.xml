@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8D5A97"
-    tools:context=".MainActivity">
+    android:background="#b0c7bd"
+    tools:context=".Pantalla03">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline101"
@@ -68,9 +68,9 @@
         android:id="@+id/textTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliga pantalla:\n\n1\n2\n3\n4"
+        android:text="PANTALLA 3"
         android:textSize="32sp"
-        android:textColor="#F8F8F9"
+        android:textColor="#323232"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline102"
@@ -78,15 +78,28 @@
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumero"
+    <TextView
+        android:id="@+id/textContador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
+        android:text="Número de veces elegida"
+        android:textSize="32sp"
+        android:textColor="#323232"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline102"
+        app:layout_constraintEnd_toStartOf="@+id/guideline204"
+        app:layout_constraintStart_toStartOf="@+id/guideline201"
+        app:layout_constraintTop_toTopOf="@+id/guideline101" />
+
+
+    <TextView
+        android:id="@+id/textNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELEGIDA"
         android:textSize="30sp"
-        android:textColor="#F8F8F9"
+        android:textColor="#323232"
         android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline103"
@@ -95,19 +108,18 @@
         app:layout_constraintTop_toTopOf="@+id/guideline102" />
 
     <Button
-        android:id="@+id/buttonElegir"
+        android:id="@+id/buttonVolver03"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="Pulsa para continuar"
+        android:text="Volver"
         android:textSize="28sp"
-        android:textColor="#8D5A97"
+        android:textColor="#b0c7bd"
         android:textStyle="bold"
-        android:backgroundTint="#F8F8F9"
+        android:backgroundTint="#323232"
         app:layout_constraintBottom_toTopOf="@+id/guideline104"
         app:layout_constraintEnd_toStartOf="@+id/guideline204"
         app:layout_constraintStart_toStartOf="@+id/guideline201"
         app:layout_constraintTop_toTopOf="@+id/guideline103" />
-
 
 
 

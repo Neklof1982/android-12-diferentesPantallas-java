@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
                 //Se convierte el texto a número, ya que es la pantalla elegida
                 //Integer.parseInt(...) lo convierte a entero
                 //String.value.of(...) lo convierte a String
@@ -61,7 +60,10 @@ public class MainActivity extends AppCompatActivity {
                         intento1.putExtras(guardar);
                         //Se inicia la actividad pantalla01
                         startActivity(intento1);
+
+                        //Para finalizar
                         break;
+
                     case 2:
 
                         //Se crea un nuevo Intent para pasar a la actividad `pantalla01`. Primera Pantalla
@@ -77,6 +79,25 @@ public class MainActivity extends AppCompatActivity {
                         intento2.putExtras(guardar);
                         //Se inicia la actividad pantalla01
                         startActivity(intento2);
+                        //Para finalizar
+                        break;
+
+                    case 3:
+
+                        //Se crea un nuevo Intent para pasar a la actividad `pantalla01`. Primera Pantalla
+                        Intent intento3 = new Intent(MainActivity.this, Pantalla03.class);
+                        //Se actualiza el contador para reflejar el número de veces que se va eligiendo
+                        contador03 += 1;
+                        //Se asocia el contador02 a la nueva variable que se envia a pantalla01
+                        int contadorPantalla03 = contador03;
+
+                        //Se agrega al Bundle el valor de contadorPantalla01 con la clave "ELEGIDA"
+                        guardar.putInt("ELEGIDA", contadorPantalla03);
+                        //Se asocia el Bundle al Intent, para enviar los datos
+                        intento3.putExtras(guardar);
+                        //Se inicia la actividad pantalla01
+                        startActivity(intento3);
+                        //Para finalizar
                         break;
                 }
             }
