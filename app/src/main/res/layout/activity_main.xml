@@ -68,7 +68,7 @@
         android:id="@+id/textTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eliga pantalla:\n\n1\n2\n3\n4"
+        android:text="Elija pantalla:\n\n1\n2\n3\n4"
         android:textSize="32sp"
         android:textColor="#F8F8F9"
         android:textStyle="bold"
@@ -80,12 +80,13 @@
 
     <!-- Si quiero que sea numero cambiar de text a number -->
     <!-- Justo debajo del espacio -->
+    <!-- hint para saber que hacer y uno pulsar sobre el número -->
     <EditText
         android:id="@+id/editTextNumero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-
+        android:hint="Introduzca número aquí"
         android:inputType="number"
         android:text=""
         android:textSize="30sp"
